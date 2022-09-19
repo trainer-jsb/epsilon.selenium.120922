@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-19T17:12:03 IST" name="Suite" finished-at="2022-09-19T17:13:57 IST" duration-ms="114503">
+    <groups>
+    </groups>
+    <test started-at="2022-09-19T17:12:03 IST" name="Test in Edge" finished-at="2022-09-19T17:13:42 IST" duration-ms="99010">
+      <class name="framework.tests.SearchProductsTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:framework.tests.SearchProductsTest@fba92d3]" started-at="2022-09-19T17:12:03 IST" name="setup" finished-at="2022-09-19T17:12:35 IST" duration-ms="31912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:framework.tests.SearchProductsTest@fba92d3]" started-at="2022-09-19T17:12:35 IST" name="beforeMethod" finished-at="2022-09-19T17:12:35 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testProductName()[pri:1, instance:framework.tests.SearchProductsTest@fba92d3]" started-at="2022-09-19T17:12:35 IST" name="testProductName" finished-at="2022-09-19T17:13:08 IST" duration-ms="33125" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+FAIL | Actual google pixel 6a 5g (charcoal, 6gb ram, 128gb storage) doesn't contain search parameter iphone expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+FAIL | Actual google pixel 6a 5g (charcoal, 6gb ram, 128gb storage) doesn't contain search parameter iphone expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at framework.tests.SearchProductsTest.testProductName(SearchProductsTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductName -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:framework.tests.SearchProductsTest@fba92d3]" started-at="2022-09-19T17:13:08 IST" name="beforeMethod" finished-at="2022-09-19T17:13:08 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testAddProductToCart()[pri:2, instance:framework.tests.SearchProductsTest@fba92d3]" started-at="2022-09-19T17:13:08 IST" name="testAddProductToCart" finished-at="2022-09-19T17:13:40 IST" depends-on-methods="framework.tests.SearchProductsTest.testProductName" duration-ms="31234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:framework.tests.SearchProductsTest@fba92d3]" started-at="2022-09-19T17:13:40 IST" name="tearDown" finished-at="2022-09-19T17:13:42 IST" duration-ms="2317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- framework.tests.SearchProductsTest -->
+    </test> <!-- Test in Edge -->
+    <test started-at="2022-09-19T17:12:03 IST" name="Test in Chrome" finished-at="2022-09-19T17:13:57 IST" duration-ms="114503">
+      <class name="framework.tests.SearchProductsTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:framework.tests.SearchProductsTest@d5b810e]" started-at="2022-09-19T17:12:03 IST" name="setup" finished-at="2022-09-19T17:12:43 IST" duration-ms="40198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:framework.tests.SearchProductsTest@d5b810e]" started-at="2022-09-19T17:12:43 IST" name="beforeMethod" finished-at="2022-09-19T17:12:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testProductName()[pri:1, instance:framework.tests.SearchProductsTest@d5b810e]" started-at="2022-09-19T17:12:43 IST" name="testProductName" finished-at="2022-09-19T17:13:19 IST" duration-ms="35957" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+FAIL | Actual google pixel 6a 5g (charcoal, 6gb ram, 128gb storage) doesn't contain search parameter iphone expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+FAIL | Actual google pixel 6a 5g (charcoal, 6gb ram, 128gb storage) doesn't contain search parameter iphone expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at framework.tests.SearchProductsTest.testProductName(SearchProductsTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductName -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:framework.tests.SearchProductsTest@d5b810e]" started-at="2022-09-19T17:13:19 IST" name="beforeMethod" finished-at="2022-09-19T17:13:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testAddProductToCart()[pri:2, instance:framework.tests.SearchProductsTest@d5b810e]" started-at="2022-09-19T17:13:19 IST" name="testAddProductToCart" finished-at="2022-09-19T17:13:56 IST" depends-on-methods="framework.tests.SearchProductsTest.testProductName" duration-ms="36731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:framework.tests.SearchProductsTest@d5b810e]" started-at="2022-09-19T17:13:56 IST" name="tearDown" finished-at="2022-09-19T17:13:57 IST" duration-ms="1497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- framework.tests.SearchProductsTest -->
+    </test> <!-- Test in Chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
