@@ -30,7 +30,7 @@ public class GetExamples {
 		sf = new SoftAssert();
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void getGoogleExample() {
 		driver.get("https://www.google.co.in");
 		String pageTitle = driver.getTitle();
@@ -42,7 +42,8 @@ public class GetExamples {
 		sf.assertAll();
 	}
 	
-	public void getZAmazonExample() {
+	@Test(priority = 2)
+	public void getsAmazonExample() {
 		driver.get("https://www.amazon.co.in");
 		String pageTitle = driver.getTitle();
 		sf.assertEquals(pageTitle, "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
